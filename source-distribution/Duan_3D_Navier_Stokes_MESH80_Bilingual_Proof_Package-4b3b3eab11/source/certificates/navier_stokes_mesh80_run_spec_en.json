@@ -1,0 +1,113 @@
+{
+  "spec_version": "8.0",
+  "seed_alias": "Initial semantic packet of a three-dimensional incompressible flow",
+  "seed_packet": {
+    "D": {
+      "given": true,
+      "same_semantics": [
+        "One incompressible-fluid identity is preserved at every finite time",
+        "With zero forcing, every momentum provenance comes from the given initial packet",
+        "Changes of coordinate location or presentation scale do not alter provenance identity"
+      ]
+    },
+    "I": {
+      "given": true,
+      "different_semantics": [
+        "Velocity differences in position, direction, and scale",
+        "The distinct roles of transport rearrangement, viscous elimination, and pressure-constraint closure",
+        "Every new difference must be explicitly registered and may not exist silently"
+      ]
+    },
+    "K": {
+      "given": true,
+      "complete_semantics": [
+        "A complete flow state consists of the initial provenance, co-provenance transport, viscous difference elimination, and incompressibility pressure closure",
+        "Pressure has no independent provenance identity and is not a third source",
+        "Future differences may arise only from registered provenance relations through explicit core routes"
+      ]
+    },
+    "W": {
+      "given": true,
+      "value_information": [
+        "No silent creation of a third source",
+        "No erasure of a registered provenance difference",
+        "No rewriting of potentially unbounded instances as a completed infinity inside one object",
+        "Preserve incompressible identity and bidirectional replay"
+      ]
+    },
+    "P": {
+      "given": true,
+      "input": "A smooth divergence-free initial velocity packet u0, viscosity nu>0, and forcing f=0",
+      "output": "A smooth divergence-free provenance-replayable flow packet u(T) at every finite time T"
+    }
+  },
+  "concept_registrations": [],
+  "concept_mentions": [],
+  "transformation_path": [
+    {
+      "from": "P",
+      "to": "D",
+      "target_part": {
+        "given": true,
+        "same_semantics": [
+          "Every finite-time output remains registered to the same initial fluid provenance",
+          "Input and output round-trip through one provenance digest"
+        ]
+      }
+    },
+    {
+      "from": "D",
+      "to": "I",
+      "target_part": {
+        "given": true,
+        "different_semantics": [
+          "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+          "Every difference retains its provenance identifier"
+        ]
+      }
+    },
+    {
+      "from": "I",
+      "to": "K",
+      "target_part": {
+        "given": true,
+        "complete_semantics": [
+          "Transport only rearranges co-provenance differences, viscosity endogenously eliminates differences, and pressure only closes incompressibility",
+          "The three roles cover every registered difference and generate no hidden fourth channel"
+        ]
+      }
+    },
+    {
+      "from": "K",
+      "to": "W",
+      "target_part": {
+        "given": true,
+        "value_information": [
+          "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+          "An eliminated provenance obligation may not return as a same-level unresolved difference"
+        ]
+      }
+    },
+    {
+      "from": "W",
+      "to": "P",
+      "target_part": {
+        "given": true,
+        "input": "A complete smooth flow packet at an arbitrary finite time",
+        "output": "A complete smooth flow packet continuable to the next finite time"
+      }
+    },
+    {
+      "from": "P",
+      "to": "K",
+      "target_part": {
+        "given": true,
+        "complete_semantics": [
+          "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+          "No finite time contains an unregistered singular provenance obligation"
+        ]
+      }
+    }
+  ],
+  "output_alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form"
+}

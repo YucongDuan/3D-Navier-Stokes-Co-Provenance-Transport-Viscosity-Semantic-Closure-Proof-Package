@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIKWP-MESH 8.0</title>
+<style>
+body{font-family:Arial,'Microsoft YaHei',sans-serif;margin:0;background:#f5f7fb;color:#172033}
+main{max-width:1180px;margin:0 auto;padding:28px}
+header{background:#13233f;color:white;padding:28px;border-radius:16px}
+.card{background:white;margin-top:18px;padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(22,32,51,.08)}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8dfeb;padding:10px;vertical-align:top;text-align:left}th{background:#edf2f9}
+pre{white-space:pre-wrap;word-break:break-word;margin:0}code{word-break:break-all}
+.badge{display:inline-block;background:#e8eef8;padding:5px 9px;border-radius:999px;margin-right:6px;color:#13233f}
+</style>
+</head>
+<body><main>
+<header>
+<h1>DIKWP-MESH 8.0</h1>
+<p>Core Bidirectional Semantic Generation / 核心语义双向生成</p>
+<span class="badge">COMPLETED_CORE_ONLY</span>
+<span class="badge">non-core semantic authority: 0</span>
+</header>
+<section class="card"><h2>Final DIKWP packet / 最终 DIKWP 语义包</h2>
+<table><tr><th>Kind</th><th>State</th><th>Content</th></tr><tr><td><strong>D</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;same_semantics&quot;: [
+    &quot;有限时刻输出继续登记为同一初始流体来源身份&quot;,
+    &quot;输入与输出通过同一来源摘要双向关联&quot;
+  ]
+}</pre></td></tr><tr><td><strong>I</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;different_semantics&quot;: [
+    &quot;同一来源内部显式分化为位置重排差异、速度差异与约束差异&quot;,
+    &quot;所有差异保留来源标识&quot;
+  ]
+}</pre></td></tr><tr><td><strong>K</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;complete_semantics&quot;: [
+    &quot;对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形&quot;,
+    &quot;任意有限时刻均无未登记的奇性来源义务&quot;
+  ]
+}</pre></td></tr><tr><td><strong>W</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;value_information&quot;: [
+    &quot;完整语义禁止第三来源、来源抹除与完成无穷&quot;,
+    &quot;消解后的同一来源义务不得作为同级未决差异返回&quot;
+  ]
+}</pre></td></tr><tr><td><strong>P</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;input&quot;: &quot;任意有限时刻的完整光滑流状态包&quot;,
+  &quot;output&quot;: &quot;可继续到下一有限时刻的完整光滑流状态包&quot;
+}</pre></td></tr></table></section>
+<section class="card"><h2>Core-to-core routes / 核心到核心路径</h2>
+<table><tr><th>#</th><th>Route</th><th>State</th><th>Applied</th></tr><tr><td>0</td><td>P2D</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>1</td><td>D2I</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>2</td><td>I2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>3</td><td>K2W</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>4</td><td>W2P</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>5</td><td>P2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr></table></section>
+<section class="card"><h2>Concept aliases born from semantics / 由语义后生的概念别名</h2>
+<table><tr><th>Alias</th><th>Revision</th><th>Packet digest</th><th>Not given</th></tr><tr><td>三维Navier-Stokes同源输运黏性消解光滑正常形</td><td>1</td><td><code>e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c</code></td><td>none</td></tr><tr><td>三维不可压缩流初始语义包</td><td>1</td><td><code>0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c</code></td><td>none</td></tr></table></section>
+<section class="card"><h2>Bidirectional association / 双向关联</h2>
+<pre>[
+  {
+    &quot;alias&quot;: &quot;三维Navier-Stokes同源输运黏性消解光滑正常形&quot;,
+    &quot;packet_digest&quot;: &quot;e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c&quot;,
+    &quot;alias_recovered&quot;: true,
+    &quot;all_aliases_for_packet&quot;: [
+      &quot;三维Navier-Stokes同源输运黏性消解光滑正常形&quot;
+    ],
+    &quot;valid&quot;: true
+  },
+  {
+    &quot;alias&quot;: &quot;三维不可压缩流初始语义包&quot;,
+    &quot;packet_digest&quot;: &quot;0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c&quot;,
+    &quot;alias_recovered&quot;: true,
+    &quot;all_aliases_for_packet&quot;: [
+      &quot;三维不可压缩流初始语义包&quot;
+    ],
+    &quot;valid&quot;: true
+  }
+]</pre></section>
+<section class="card"><h2>Transport integrity / 传输完整性</h2>
+<p>Run hash: <code>39600a04e51908b85eff109e8a4ddd280027dae91eac7a46bc9e461f79d0e0a6</code></p>
+<p>Ledger head: <code>a6f0124aa42b6ea00abd81bb370bcfa3d9bb2272514fca6587e1c7f5da6688e8</code></p>
+<p>These handles compare bytes only and do not generate semantics.</p></section>
+</main></body></html>

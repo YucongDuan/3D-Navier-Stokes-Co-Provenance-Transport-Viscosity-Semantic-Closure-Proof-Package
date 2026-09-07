@@ -1,0 +1,642 @@
+{
+  "bidirectional_roundtrip": [
+    {
+      "alias": "Initial semantic packet of a three-dimensional incompressible flow",
+      "alias_recovered": true,
+      "all_aliases_for_packet": [
+        "Initial semantic packet of a three-dimensional incompressible flow"
+      ],
+      "packet_digest": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59",
+      "valid": true
+    },
+    {
+      "alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form",
+      "alias_recovered": true,
+      "all_aliases_for_packet": [
+        "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form"
+      ],
+      "packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+      "valid": true
+    }
+  ],
+  "concept_registry": {
+    "aliases": {
+      "Initial semantic packet of a three-dimensional incompressible flow": [
+        {
+          "alias": "Initial semantic packet of a three-dimensional incompressible flow",
+          "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+          "not_given": [],
+          "packet": {
+            "D": {
+              "given": true,
+              "same_semantics": [
+                "One incompressible-fluid identity is preserved at every finite time",
+                "With zero forcing, every momentum provenance comes from the given initial packet",
+                "Changes of coordinate location or presentation scale do not alter provenance identity"
+              ]
+            },
+            "I": {
+              "different_semantics": [
+                "Velocity differences in position, direction, and scale",
+                "The distinct roles of transport rearrangement, viscous elimination, and pressure-constraint closure",
+                "Every new difference must be explicitly registered and may not exist silently"
+              ],
+              "given": true
+            },
+            "K": {
+              "complete_semantics": [
+                "A complete flow state consists of the initial provenance, co-provenance transport, viscous difference elimination, and incompressibility pressure closure",
+                "Pressure has no independent provenance identity and is not a third source",
+                "Future differences may arise only from registered provenance relations through explicit core routes"
+              ],
+              "given": true
+            },
+            "P": {
+              "given": true,
+              "input": "A smooth divergence-free initial velocity packet u0, viscosity nu>0, and forcing f=0",
+              "output": "A smooth divergence-free provenance-replayable flow packet u(T) at every finite time T"
+            },
+            "W": {
+              "given": true,
+              "value_information": [
+                "No silent creation of a third source",
+                "No erasure of a registered provenance difference",
+                "No rewriting of potentially unbounded instances as a completed infinity inside one object",
+                "Preserve incompressible identity and bidirectional replay"
+              ]
+            }
+          },
+          "packet_digest": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59",
+          "previous_packet_digest": null,
+          "revision": 1
+        }
+      ],
+      "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form": [
+        {
+          "alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form",
+          "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+          "not_given": [],
+          "packet": {
+            "D": {
+              "given": true,
+              "same_semantics": [
+                "Every finite-time output remains registered to the same initial fluid provenance",
+                "Input and output round-trip through one provenance digest"
+              ]
+            },
+            "I": {
+              "different_semantics": [
+                "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+                "Every difference retains its provenance identifier"
+              ],
+              "given": true
+            },
+            "K": {
+              "complete_semantics": [
+                "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+                "No finite time contains an unregistered singular provenance obligation"
+              ],
+              "given": true
+            },
+            "P": {
+              "given": true,
+              "input": "A complete smooth flow packet at an arbitrary finite time",
+              "output": "A complete smooth flow packet continuable to the next finite time"
+            },
+            "W": {
+              "given": true,
+              "value_information": [
+                "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+                "An eliminated provenance obligation may not return as a same-level unresolved difference"
+              ]
+            }
+          },
+          "packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+          "previous_packet_digest": null,
+          "revision": 1
+        }
+      ]
+    }
+  },
+  "final_packet": {
+    "D": {
+      "given": true,
+      "same_semantics": [
+        "Every finite-time output remains registered to the same initial fluid provenance",
+        "Input and output round-trip through one provenance digest"
+      ]
+    },
+    "I": {
+      "different_semantics": [
+        "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+        "Every difference retains its provenance identifier"
+      ],
+      "given": true
+    },
+    "K": {
+      "complete_semantics": [
+        "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+        "No finite time contains an unregistered singular provenance obligation"
+      ],
+      "given": true
+    },
+    "P": {
+      "given": true,
+      "input": "A complete smooth flow packet at an arbitrary finite time",
+      "output": "A complete smooth flow packet continuable to the next finite time"
+    },
+    "W": {
+      "given": true,
+      "value_information": [
+        "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+        "An eliminated provenance obligation may not return as a same-level unresolved difference"
+      ]
+    }
+  },
+  "final_packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+  "generated_at": "2026-08-08T00:44:13Z",
+  "ledger": {
+    "algorithm": "SHA-256",
+    "events": [
+      {
+        "event": {
+          "alias": "Initial semantic packet of a three-dimensional incompressible flow",
+          "event": "SEED_ALIAS_BORN_FROM_DIKWP",
+          "not_given": [],
+          "packet_digest": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59"
+        },
+        "hash": "43e3be25d1e7cba09859a2ac60c05608030935035f5e180ae9c206f1484dc048",
+        "index": 0,
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 0,
+          "packet_after": "b47166f00de7f87ca709360e135a71539f9d8b1c5ed9eeea85d210391b54626c",
+          "packet_before": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59",
+          "route": "P2D",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "408acc10acb0a1b636484032985609b3d22886f821c37fa8ffd4c8ed67c16a55",
+        "index": 1,
+        "previous": "43e3be25d1e7cba09859a2ac60c05608030935035f5e180ae9c206f1484dc048"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 1,
+          "packet_after": "45f3bf360b3449d043c03ab248ea6728c737eaac250187c7b179aa2708a72ecb",
+          "packet_before": "b47166f00de7f87ca709360e135a71539f9d8b1c5ed9eeea85d210391b54626c",
+          "route": "D2I",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "08586a991b468340fb1de654d2834c578fa41a9683f7da37ba75a9f8d4789d0c",
+        "index": 2,
+        "previous": "408acc10acb0a1b636484032985609b3d22886f821c37fa8ffd4c8ed67c16a55"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 2,
+          "packet_after": "d45aa224b2ba91e05542609842abc004be6337d334a933a094ba82ee03467e60",
+          "packet_before": "45f3bf360b3449d043c03ab248ea6728c737eaac250187c7b179aa2708a72ecb",
+          "route": "I2K",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "4e177579fa44e2e0aebbf000c301e445079e88fdc53ca5ebec6831b7776f2f0d",
+        "index": 3,
+        "previous": "08586a991b468340fb1de654d2834c578fa41a9683f7da37ba75a9f8d4789d0c"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 3,
+          "packet_after": "0bb874b1ba74e4e18a21d0e7ccbd91ca25abcfd83266566428c81950e9d7fccf",
+          "packet_before": "d45aa224b2ba91e05542609842abc004be6337d334a933a094ba82ee03467e60",
+          "route": "K2W",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "f6c76ae259c25e0f8dc088163947bb273600637457c3dcf2c81fa5dbcc417c97",
+        "index": 4,
+        "previous": "4e177579fa44e2e0aebbf000c301e445079e88fdc53ca5ebec6831b7776f2f0d"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 4,
+          "packet_after": "78910c4839f5863aca1c09a9b9e975afea6e5e3cbbb31073fe71d65527bd004d",
+          "packet_before": "0bb874b1ba74e4e18a21d0e7ccbd91ca25abcfd83266566428c81950e9d7fccf",
+          "route": "W2P",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "fcc5771cffff7109bd0ab989f5be0d8cdcc0e5ed44a8a4e4de0398696eff0647",
+        "index": 5,
+        "previous": "f6c76ae259c25e0f8dc088163947bb273600637457c3dcf2c81fa5dbcc417c97"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 5,
+          "packet_after": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+          "packet_before": "78910c4839f5863aca1c09a9b9e975afea6e5e3cbbb31073fe71d65527bd004d",
+          "route": "P2K",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "ca1b60047b3cb377d8a71c3aed2038aee7d950fcc5a09a9905d3d30e4e188bf5",
+        "index": 6,
+        "previous": "fcc5771cffff7109bd0ab989f5be0d8cdcc0e5ed44a8a4e4de0398696eff0647"
+      },
+      {
+        "event": {
+          "alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form",
+          "event": "OUTPUT_ALIAS_BORN_FROM_DIKWP",
+          "not_given": [],
+          "packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e"
+        },
+        "hash": "bd049f5fa3d8d4c142b2fad75beb7ac7807319191107ae1e9d092b9e11e7eb74",
+        "index": 7,
+        "previous": "ca1b60047b3cb377d8a71c3aed2038aee7d950fcc5a09a9905d3d30e4e188bf5"
+      },
+      {
+        "event": {
+          "aliases": [
+            "Initial semantic packet of a three-dimensional incompressible flow",
+            "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form"
+          ],
+          "all_valid": true,
+          "event": "BIDIRECTIONAL_ASSOCIATION_CHECKED"
+        },
+        "hash": "96e211236748f76e74083210179439b3d777321b16e2cc347d2b014bccc99ff6",
+        "index": 8,
+        "previous": "bd049f5fa3d8d4c142b2fad75beb7ac7807319191107ae1e9d092b9e11e7eb74"
+      }
+    ],
+    "genesis": "0000000000000000000000000000000000000000000000000000000000000000",
+    "head": "96e211236748f76e74083210179439b3d777321b16e2cc347d2b014bccc99ff6",
+    "semantic_authority": 0
+  },
+  "mode": "MESH80_DIKWP_CORE_ONLY",
+  "non_core_semantic_authority": 0,
+  "not_given": [],
+  "output_record": {
+    "alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form",
+    "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+    "not_given": [],
+    "packet": {
+      "D": {
+        "given": true,
+        "same_semantics": [
+          "Every finite-time output remains registered to the same initial fluid provenance",
+          "Input and output round-trip through one provenance digest"
+        ]
+      },
+      "I": {
+        "different_semantics": [
+          "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+          "Every difference retains its provenance identifier"
+        ],
+        "given": true
+      },
+      "K": {
+        "complete_semantics": [
+          "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+          "No finite time contains an unregistered singular provenance obligation"
+        ],
+        "given": true
+      },
+      "P": {
+        "given": true,
+        "input": "A complete smooth flow packet at an arbitrary finite time",
+        "output": "A complete smooth flow packet continuable to the next finite time"
+      },
+      "W": {
+        "given": true,
+        "value_information": [
+          "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+          "An eliminated provenance obligation may not return as a same-level unresolved difference"
+        ]
+      }
+    },
+    "packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+    "previous_packet_digest": null,
+    "revision": 1
+  },
+  "run_hash": "880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40",
+  "run_state": "COMPLETED_CORE_ONLY",
+  "seed_packet_digest": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59",
+  "semantic_authority": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "spec": {
+    "concept_mentions": [],
+    "concept_registrations": [],
+    "output_alias": "Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form",
+    "seed_alias": "Initial semantic packet of a three-dimensional incompressible flow",
+    "seed_packet": {
+      "D": {
+        "given": true,
+        "same_semantics": [
+          "One incompressible-fluid identity is preserved at every finite time",
+          "With zero forcing, every momentum provenance comes from the given initial packet",
+          "Changes of coordinate location or presentation scale do not alter provenance identity"
+        ]
+      },
+      "I": {
+        "different_semantics": [
+          "Velocity differences in position, direction, and scale",
+          "The distinct roles of transport rearrangement, viscous elimination, and pressure-constraint closure",
+          "Every new difference must be explicitly registered and may not exist silently"
+        ],
+        "given": true
+      },
+      "K": {
+        "complete_semantics": [
+          "A complete flow state consists of the initial provenance, co-provenance transport, viscous difference elimination, and incompressibility pressure closure",
+          "Pressure has no independent provenance identity and is not a third source",
+          "Future differences may arise only from registered provenance relations through explicit core routes"
+        ],
+        "given": true
+      },
+      "P": {
+        "given": true,
+        "input": "A smooth divergence-free initial velocity packet u0, viscosity nu>0, and forcing f=0",
+        "output": "A smooth divergence-free provenance-replayable flow packet u(T) at every finite time T"
+      },
+      "W": {
+        "given": true,
+        "value_information": [
+          "No silent creation of a third source",
+          "No erasure of a registered provenance difference",
+          "No rewriting of potentially unbounded instances as a completed infinity inside one object",
+          "Preserve incompressible identity and bidirectional replay"
+        ]
+      }
+    },
+    "spec_version": "8.0.0",
+    "transformation_path": [
+      {
+        "from": "P",
+        "target_part": {
+          "given": true,
+          "same_semantics": [
+            "Every finite-time output remains registered to the same initial fluid provenance",
+            "Input and output round-trip through one provenance digest"
+          ]
+        },
+        "to": "D"
+      },
+      {
+        "from": "D",
+        "target_part": {
+          "different_semantics": [
+            "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+            "Every difference retains its provenance identifier"
+          ],
+          "given": true
+        },
+        "to": "I"
+      },
+      {
+        "from": "I",
+        "target_part": {
+          "complete_semantics": [
+            "Transport only rearranges co-provenance differences, viscosity endogenously eliminates differences, and pressure only closes incompressibility",
+            "The three roles cover every registered difference and generate no hidden fourth channel"
+          ],
+          "given": true
+        },
+        "to": "K"
+      },
+      {
+        "from": "K",
+        "target_part": {
+          "given": true,
+          "value_information": [
+            "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+            "An eliminated provenance obligation may not return as a same-level unresolved difference"
+          ]
+        },
+        "to": "W"
+      },
+      {
+        "from": "W",
+        "target_part": {
+          "given": true,
+          "input": "A complete smooth flow packet at an arbitrary finite time",
+          "output": "A complete smooth flow packet continuable to the next finite time"
+        },
+        "to": "P"
+      },
+      {
+        "from": "P",
+        "target_part": {
+          "complete_semantics": [
+            "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+            "No finite time contains an unregistered singular provenance obligation"
+          ],
+          "given": true
+        },
+        "to": "K"
+      }
+    ]
+  },
+  "system": "DIKWP-MESH 8.0 Core Bidirectional Semantic Generation",
+  "transformation_trace": [
+    {
+      "applied": true,
+      "from": "P",
+      "index": 0,
+      "packet_after": "b47166f00de7f87ca709360e135a71539f9d8b1c5ed9eeea85d210391b54626c",
+      "packet_before": "93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59",
+      "route": "P2D",
+      "source_part": {
+        "given": true,
+        "input": "A smooth divergence-free initial velocity packet u0, viscosity nu>0, and forcing f=0",
+        "output": "A smooth divergence-free provenance-replayable flow packet u(T) at every finite time T"
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "same_semantics": [
+          "Every finite-time output remains registered to the same initial fluid provenance",
+          "Input and output round-trip through one provenance digest"
+        ]
+      },
+      "target_before": {
+        "given": true,
+        "same_semantics": [
+          "One incompressible-fluid identity is preserved at every finite time",
+          "With zero forcing, every momentum provenance comes from the given initial packet",
+          "Changes of coordinate location or presentation scale do not alter provenance identity"
+        ]
+      },
+      "to": "D"
+    },
+    {
+      "applied": true,
+      "from": "D",
+      "index": 1,
+      "packet_after": "45f3bf360b3449d043c03ab248ea6728c737eaac250187c7b179aa2708a72ecb",
+      "packet_before": "b47166f00de7f87ca709360e135a71539f9d8b1c5ed9eeea85d210391b54626c",
+      "route": "D2I",
+      "source_part": {
+        "given": true,
+        "same_semantics": [
+          "Every finite-time output remains registered to the same initial fluid provenance",
+          "Input and output round-trip through one provenance digest"
+        ]
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "different_semantics": [
+          "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+          "Every difference retains its provenance identifier"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "different_semantics": [
+          "Velocity differences in position, direction, and scale",
+          "The distinct roles of transport rearrangement, viscous elimination, and pressure-constraint closure",
+          "Every new difference must be explicitly registered and may not exist silently"
+        ],
+        "given": true
+      },
+      "to": "I"
+    },
+    {
+      "applied": true,
+      "from": "I",
+      "index": 2,
+      "packet_after": "d45aa224b2ba91e05542609842abc004be6337d334a933a094ba82ee03467e60",
+      "packet_before": "45f3bf360b3449d043c03ab248ea6728c737eaac250187c7b179aa2708a72ecb",
+      "route": "I2K",
+      "source_part": {
+        "different_semantics": [
+          "The same provenance is explicitly differentiated into relocation, velocity, and constraint differences",
+          "Every difference retains its provenance identifier"
+        ],
+        "given": true
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "complete_semantics": [
+          "Transport only rearranges co-provenance differences, viscosity endogenously eliminates differences, and pressure only closes incompressibility",
+          "The three roles cover every registered difference and generate no hidden fourth channel"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "complete_semantics": [
+          "A complete flow state consists of the initial provenance, co-provenance transport, viscous difference elimination, and incompressibility pressure closure",
+          "Pressure has no independent provenance identity and is not a third source",
+          "Future differences may arise only from registered provenance relations through explicit core routes"
+        ],
+        "given": true
+      },
+      "to": "K"
+    },
+    {
+      "applied": true,
+      "from": "K",
+      "index": 3,
+      "packet_after": "0bb874b1ba74e4e18a21d0e7ccbd91ca25abcfd83266566428c81950e9d7fccf",
+      "packet_before": "d45aa224b2ba91e05542609842abc004be6337d334a933a094ba82ee03467e60",
+      "route": "K2W",
+      "source_part": {
+        "complete_semantics": [
+          "Transport only rearranges co-provenance differences, viscosity endogenously eliminates differences, and pressure only closes incompressibility",
+          "The three roles cover every registered difference and generate no hidden fourth channel"
+        ],
+        "given": true
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "value_information": [
+          "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+          "An eliminated provenance obligation may not return as a same-level unresolved difference"
+        ]
+      },
+      "target_before": {
+        "given": true,
+        "value_information": [
+          "No silent creation of a third source",
+          "No erasure of a registered provenance difference",
+          "No rewriting of potentially unbounded instances as a completed infinity inside one object",
+          "Preserve incompressible identity and bidirectional replay"
+        ]
+      },
+      "to": "W"
+    },
+    {
+      "applied": true,
+      "from": "W",
+      "index": 4,
+      "packet_after": "78910c4839f5863aca1c09a9b9e975afea6e5e3cbbb31073fe71d65527bd004d",
+      "packet_before": "0bb874b1ba74e4e18a21d0e7ccbd91ca25abcfd83266566428c81950e9d7fccf",
+      "route": "W2P",
+      "source_part": {
+        "given": true,
+        "value_information": [
+          "Complete semantics forbids a third source, provenance erasure, and completed infinity",
+          "An eliminated provenance obligation may not return as a same-level unresolved difference"
+        ]
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "input": "A complete smooth flow packet at an arbitrary finite time",
+        "output": "A complete smooth flow packet continuable to the next finite time"
+      },
+      "target_before": {
+        "given": true,
+        "input": "A smooth divergence-free initial velocity packet u0, viscosity nu>0, and forcing f=0",
+        "output": "A smooth divergence-free provenance-replayable flow packet u(T) at every finite time T"
+      },
+      "to": "P"
+    },
+    {
+      "applied": true,
+      "from": "P",
+      "index": 5,
+      "packet_after": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+      "packet_before": "78910c4839f5863aca1c09a9b9e975afea6e5e3cbbb31073fe71d65527bd004d",
+      "route": "P2K",
+      "source_part": {
+        "given": true,
+        "input": "A complete smooth flow packet at an arbitrary finite time",
+        "output": "A complete smooth flow packet continuable to the next finite time"
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "complete_semantics": [
+          "For every finite T, finitely instantiated explicit core routes form a replayable flow normal form",
+          "No finite time contains an unregistered singular provenance obligation"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "complete_semantics": [
+          "Transport only rearranges co-provenance differences, viscosity endogenously eliminates differences, and pressure only closes incompressibility",
+          "The three roles cover every registered difference and generate no hidden fourth channel"
+        ],
+        "given": true
+      },
+      "to": "K"
+    }
+  ],
+  "unregistered_aliases": [],
+  "version": "8.0.0"
+}

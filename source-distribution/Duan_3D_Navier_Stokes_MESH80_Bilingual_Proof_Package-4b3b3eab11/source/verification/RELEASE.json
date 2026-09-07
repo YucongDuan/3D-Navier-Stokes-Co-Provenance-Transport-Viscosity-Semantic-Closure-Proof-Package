@@ -1,0 +1,15 @@
+{
+  "name": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package",
+  "version": "1.0.0",
+  "language": [
+    "zh-CN",
+    "en"
+  ],
+  "primary_artifacts": [
+    "reports/Yucong_Duan_3D_Navier_Stokes_CoProvenance_Transport_Viscosity_Semantic_Closure_Proof_MESH80_Full_Report_EN.docx",
+    "reports/段玉聪_三维Navier-Stokes存在性与光滑性同源输运黏性消解语义闭环非传统证明_MESH80完整报告_中文版.docx"
+  ],
+  "runtime": "runtime/DIKWP_MESH80_CORE.pyz",
+  "verification": "verification/verify_package.py",
+  "license": "Apache-2.0 for code components; report rights stated in NOTICE"
+}

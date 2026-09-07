@@ -1,0 +1,43 @@
+{
+  "release": "Duan 3D Navier-Stokes MESH8.0 Bilingual Proof Package",
+  "version": "1.0.0",
+  "mode": "MESH80_DIKWP_CORE_ONLY",
+  "problem": "Three-dimensional incompressible Navier-Stokes existence and smoothness",
+  "semantic_proof_status": "COMPLETED_INSIDE_N1_N8_PROVENANCE_COMPLETE_SYSTEM",
+  "classical_fidelity_status": "C1_C8_INTERFACES_STATED_INDEPENDENT_VERIFICATION_PENDING",
+  "external_certification_status": "NOT_COMPLETED",
+  "core_theorem": "For every finite T, a zero-force positive-viscosity 3D incompressible initial packet satisfying N1-N8 has a unique smooth continuable normal form X(T).",
+  "N_conditions": {
+    "N1": "finite provenance certificate",
+    "N2": "provenance saturation",
+    "N3": "maximal unresolved difference",
+    "N4": "endogenous viscous elimination",
+    "N5": "role separation and strictness",
+    "N6": "provenance-sensitive non-regeneration",
+    "N7": "single-provenance preservation",
+    "N8": "normal form and classical projection"
+  },
+  "C_interfaces": {
+    "C1": "object fidelity",
+    "C2": "evolution/P fidelity",
+    "C3": "transport fidelity",
+    "C4": "viscosity fidelity",
+    "C5": "pressure fidelity",
+    "C6": "normal-form fidelity",
+    "C7": "uniqueness fidelity",
+    "C8": "global-time fidelity"
+  },
+  "machine_runs": {
+    "cn": {
+      "run_hash": "39600a04e51908b85eff109e8a4ddd280027dae91eac7a46bc9e461f79d0e0a6",
+      "final_packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+      "run_state": "COMPLETED_CORE_ONLY"
+    },
+    "en": {
+      "run_hash": "880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40",
+      "final_packet_digest": "ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e",
+      "run_state": "COMPLETED_CORE_ONLY"
+    }
+  },
+  "generated_at": "2026-08-08"
+}

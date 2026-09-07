@@ -1,0 +1,11 @@
+{
+  "bidirectional_roundtrip_ok": true,
+  "claimed_run_hash": "880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40",
+  "final_packet_digest_ok": true,
+  "ledger_head_ok": true,
+  "ledger_ok": true,
+  "recomputed_run_hash": "880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40",
+  "registry_packet_digests_ok": true,
+  "run_hash_ok": true,
+  "valid": true
+}

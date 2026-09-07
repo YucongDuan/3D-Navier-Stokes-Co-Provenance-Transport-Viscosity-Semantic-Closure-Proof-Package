@@ -1,0 +1,642 @@
+{
+  "bidirectional_roundtrip": [
+    {
+      "alias": "三维Navier-Stokes同源输运黏性消解光滑正常形",
+      "alias_recovered": true,
+      "all_aliases_for_packet": [
+        "三维Navier-Stokes同源输运黏性消解光滑正常形"
+      ],
+      "packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+      "valid": true
+    },
+    {
+      "alias": "三维不可压缩流初始语义包",
+      "alias_recovered": true,
+      "all_aliases_for_packet": [
+        "三维不可压缩流初始语义包"
+      ],
+      "packet_digest": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c",
+      "valid": true
+    }
+  ],
+  "concept_registry": {
+    "aliases": {
+      "三维Navier-Stokes同源输运黏性消解光滑正常形": [
+        {
+          "alias": "三维Navier-Stokes同源输运黏性消解光滑正常形",
+          "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+          "not_given": [],
+          "packet": {
+            "D": {
+              "given": true,
+              "same_semantics": [
+                "有限时刻输出继续登记为同一初始流体来源身份",
+                "输入与输出通过同一来源摘要双向关联"
+              ]
+            },
+            "I": {
+              "different_semantics": [
+                "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+                "所有差异保留来源标识"
+              ],
+              "given": true
+            },
+            "K": {
+              "complete_semantics": [
+                "对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形",
+                "任意有限时刻均无未登记的奇性来源义务"
+              ],
+              "given": true
+            },
+            "P": {
+              "given": true,
+              "input": "任意有限时刻的完整光滑流状态包",
+              "output": "可继续到下一有限时刻的完整光滑流状态包"
+            },
+            "W": {
+              "given": true,
+              "value_information": [
+                "完整语义禁止第三来源、来源抹除与完成无穷",
+                "消解后的同一来源义务不得作为同级未决差异返回"
+              ]
+            }
+          },
+          "packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+          "previous_packet_digest": null,
+          "revision": 1
+        }
+      ],
+      "三维不可压缩流初始语义包": [
+        {
+          "alias": "三维不可压缩流初始语义包",
+          "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+          "not_given": [],
+          "packet": {
+            "D": {
+              "given": true,
+              "same_semantics": [
+                "同一不可压缩流体身份在任意有限时刻保持",
+                "无外力条件下全部动量来源来自已给定初始语义包",
+                "坐标位置与呈现尺度变化不改变来源身份"
+              ]
+            },
+            "I": {
+              "different_semantics": [
+                "空间位置、方向与尺度上的速度差异",
+                "输运重排、黏性消解与压力约束闭合三种不同角色",
+                "任意新差异必须显式登记，不得静默存在"
+              ],
+              "given": true
+            },
+            "K": {
+              "complete_semantics": [
+                "完整流状态由初始来源、同源输运、黏性差异消解与不可压缩压力闭合共同构成",
+                "压力不具有独立来源身份，不构成第三来源",
+                "未来差异只能由已登记来源关系通过显式核心路径派生"
+              ],
+              "given": true
+            },
+            "P": {
+              "given": true,
+              "input": "给定光滑、无散度初始速度语义包 u0，黏性系数 nu>0，外力 f=0",
+              "output": "任意有限时刻 T 的光滑、无散度、来源可回放流状态语义包 u(T)"
+            },
+            "W": {
+              "given": true,
+              "value_information": [
+                "禁止静默生成第三来源",
+                "禁止抹去已经登记的来源差异",
+                "禁止把潜在无界实例补写为单一对象内部已经完成的无穷",
+                "保持不可压缩身份与双向回放"
+              ]
+            }
+          },
+          "packet_digest": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c",
+          "previous_packet_digest": null,
+          "revision": 1
+        }
+      ]
+    }
+  },
+  "final_packet": {
+    "D": {
+      "given": true,
+      "same_semantics": [
+        "有限时刻输出继续登记为同一初始流体来源身份",
+        "输入与输出通过同一来源摘要双向关联"
+      ]
+    },
+    "I": {
+      "different_semantics": [
+        "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+        "所有差异保留来源标识"
+      ],
+      "given": true
+    },
+    "K": {
+      "complete_semantics": [
+        "对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形",
+        "任意有限时刻均无未登记的奇性来源义务"
+      ],
+      "given": true
+    },
+    "P": {
+      "given": true,
+      "input": "任意有限时刻的完整光滑流状态包",
+      "output": "可继续到下一有限时刻的完整光滑流状态包"
+    },
+    "W": {
+      "given": true,
+      "value_information": [
+        "完整语义禁止第三来源、来源抹除与完成无穷",
+        "消解后的同一来源义务不得作为同级未决差异返回"
+      ]
+    }
+  },
+  "final_packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+  "generated_at": "2026-08-08T00:44:12Z",
+  "ledger": {
+    "algorithm": "SHA-256",
+    "events": [
+      {
+        "event": {
+          "alias": "三维不可压缩流初始语义包",
+          "event": "SEED_ALIAS_BORN_FROM_DIKWP",
+          "not_given": [],
+          "packet_digest": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c"
+        },
+        "hash": "e1eb737293333837909cc3035c3107235473bd0642aa2d1d7e4a65e137ebf7db",
+        "index": 0,
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 0,
+          "packet_after": "6f98d86d292671cfcccdafa17f061cf65f3b6f34d948f3f20e4c3616da21d804",
+          "packet_before": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c",
+          "route": "P2D",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "73393e4bfb4b2926a7116c6928fb32a828d327b58f20177dfb5c96412fbf46ae",
+        "index": 1,
+        "previous": "e1eb737293333837909cc3035c3107235473bd0642aa2d1d7e4a65e137ebf7db"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 1,
+          "packet_after": "d2c2fdae2eea7b634f0d91ef9e6917bae8eac35f7db13f4369ec214b7ca7be72",
+          "packet_before": "6f98d86d292671cfcccdafa17f061cf65f3b6f34d948f3f20e4c3616da21d804",
+          "route": "D2I",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "25c3aaff9bd59342284a544de0f8bde2c8aaeea69e24fce10ef358bb642c6e7b",
+        "index": 2,
+        "previous": "73393e4bfb4b2926a7116c6928fb32a828d327b58f20177dfb5c96412fbf46ae"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 2,
+          "packet_after": "3ebaa7f2bca969a1d0b9d4d3415260bf7b5e5635011867d4aaf46214e2e7adda",
+          "packet_before": "d2c2fdae2eea7b634f0d91ef9e6917bae8eac35f7db13f4369ec214b7ca7be72",
+          "route": "I2K",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "314d18c51cfa43428da026593fb67c14963839b73d2995ad5dbf4d41a2356002",
+        "index": 3,
+        "previous": "25c3aaff9bd59342284a544de0f8bde2c8aaeea69e24fce10ef358bb642c6e7b"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 3,
+          "packet_after": "bb4823d62155c6fd07f60329ba114ad10030f5ab83216c8cc843a477ddd0d644",
+          "packet_before": "3ebaa7f2bca969a1d0b9d4d3415260bf7b5e5635011867d4aaf46214e2e7adda",
+          "route": "K2W",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "688cc86a1df9b322d158c0fdcd66bb49896b648911b254e04d929108e92b5be4",
+        "index": 4,
+        "previous": "314d18c51cfa43428da026593fb67c14963839b73d2995ad5dbf4d41a2356002"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 4,
+          "packet_after": "55076804f29a683a6f347f670fff08dc4d8346a3b6c0fa23cbc51f0a6f9ba1c7",
+          "packet_before": "bb4823d62155c6fd07f60329ba114ad10030f5ab83216c8cc843a477ddd0d644",
+          "route": "W2P",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "a81df11eb5ee316451a4c4a3c3ba0f53eb8d5fcb7ae630f3769393d87683c87e",
+        "index": 5,
+        "previous": "688cc86a1df9b322d158c0fdcd66bb49896b648911b254e04d929108e92b5be4"
+      },
+      {
+        "event": {
+          "applied": true,
+          "event": "CORE_TO_CORE_ROUTE",
+          "index": 5,
+          "packet_after": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+          "packet_before": "55076804f29a683a6f347f670fff08dc4d8346a3b6c0fa23cbc51f0a6f9ba1c7",
+          "route": "P2K",
+          "state": "EXPLICIT_CORE_TO_CORE_GENERATION"
+        },
+        "hash": "a8428acbb125699ef77eff33ad9ee2276aeb9a62e8a7ce9790a2bf7d2a98b93b",
+        "index": 6,
+        "previous": "a81df11eb5ee316451a4c4a3c3ba0f53eb8d5fcb7ae630f3769393d87683c87e"
+      },
+      {
+        "event": {
+          "alias": "三维Navier-Stokes同源输运黏性消解光滑正常形",
+          "event": "OUTPUT_ALIAS_BORN_FROM_DIKWP",
+          "not_given": [],
+          "packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c"
+        },
+        "hash": "d14b160b27e6816139b390efa4a989058185fb5b702f9aab491c57eeeeba7ba5",
+        "index": 7,
+        "previous": "a8428acbb125699ef77eff33ad9ee2276aeb9a62e8a7ce9790a2bf7d2a98b93b"
+      },
+      {
+        "event": {
+          "aliases": [
+            "三维Navier-Stokes同源输运黏性消解光滑正常形",
+            "三维不可压缩流初始语义包"
+          ],
+          "all_valid": true,
+          "event": "BIDIRECTIONAL_ASSOCIATION_CHECKED"
+        },
+        "hash": "a6f0124aa42b6ea00abd81bb370bcfa3d9bb2272514fca6587e1c7f5da6688e8",
+        "index": 8,
+        "previous": "d14b160b27e6816139b390efa4a989058185fb5b702f9aab491c57eeeeba7ba5"
+      }
+    ],
+    "genesis": "0000000000000000000000000000000000000000000000000000000000000000",
+    "head": "a6f0124aa42b6ea00abd81bb370bcfa3d9bb2272514fca6587e1c7f5da6688e8",
+    "semantic_authority": 0
+  },
+  "mode": "MESH80_DIKWP_CORE_ONLY",
+  "non_core_semantic_authority": 0,
+  "not_given": [],
+  "output_record": {
+    "alias": "三维Navier-Stokes同源输运黏性消解光滑正常形",
+    "birth_state": "BORN_FROM_COMPLETE_DIKWP",
+    "not_given": [],
+    "packet": {
+      "D": {
+        "given": true,
+        "same_semantics": [
+          "有限时刻输出继续登记为同一初始流体来源身份",
+          "输入与输出通过同一来源摘要双向关联"
+        ]
+      },
+      "I": {
+        "different_semantics": [
+          "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+          "所有差异保留来源标识"
+        ],
+        "given": true
+      },
+      "K": {
+        "complete_semantics": [
+          "对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形",
+          "任意有限时刻均无未登记的奇性来源义务"
+        ],
+        "given": true
+      },
+      "P": {
+        "given": true,
+        "input": "任意有限时刻的完整光滑流状态包",
+        "output": "可继续到下一有限时刻的完整光滑流状态包"
+      },
+      "W": {
+        "given": true,
+        "value_information": [
+          "完整语义禁止第三来源、来源抹除与完成无穷",
+          "消解后的同一来源义务不得作为同级未决差异返回"
+        ]
+      }
+    },
+    "packet_digest": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+    "previous_packet_digest": null,
+    "revision": 1
+  },
+  "run_hash": "39600a04e51908b85eff109e8a4ddd280027dae91eac7a46bc9e461f79d0e0a6",
+  "run_state": "COMPLETED_CORE_ONLY",
+  "seed_packet_digest": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c",
+  "semantic_authority": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "spec": {
+    "concept_mentions": [],
+    "concept_registrations": [],
+    "output_alias": "三维Navier-Stokes同源输运黏性消解光滑正常形",
+    "seed_alias": "三维不可压缩流初始语义包",
+    "seed_packet": {
+      "D": {
+        "given": true,
+        "same_semantics": [
+          "同一不可压缩流体身份在任意有限时刻保持",
+          "无外力条件下全部动量来源来自已给定初始语义包",
+          "坐标位置与呈现尺度变化不改变来源身份"
+        ]
+      },
+      "I": {
+        "different_semantics": [
+          "空间位置、方向与尺度上的速度差异",
+          "输运重排、黏性消解与压力约束闭合三种不同角色",
+          "任意新差异必须显式登记，不得静默存在"
+        ],
+        "given": true
+      },
+      "K": {
+        "complete_semantics": [
+          "完整流状态由初始来源、同源输运、黏性差异消解与不可压缩压力闭合共同构成",
+          "压力不具有独立来源身份，不构成第三来源",
+          "未来差异只能由已登记来源关系通过显式核心路径派生"
+        ],
+        "given": true
+      },
+      "P": {
+        "given": true,
+        "input": "给定光滑、无散度初始速度语义包 u0，黏性系数 nu>0，外力 f=0",
+        "output": "任意有限时刻 T 的光滑、无散度、来源可回放流状态语义包 u(T)"
+      },
+      "W": {
+        "given": true,
+        "value_information": [
+          "禁止静默生成第三来源",
+          "禁止抹去已经登记的来源差异",
+          "禁止把潜在无界实例补写为单一对象内部已经完成的无穷",
+          "保持不可压缩身份与双向回放"
+        ]
+      }
+    },
+    "spec_version": "8.0.0",
+    "transformation_path": [
+      {
+        "from": "P",
+        "target_part": {
+          "given": true,
+          "same_semantics": [
+            "有限时刻输出继续登记为同一初始流体来源身份",
+            "输入与输出通过同一来源摘要双向关联"
+          ]
+        },
+        "to": "D"
+      },
+      {
+        "from": "D",
+        "target_part": {
+          "different_semantics": [
+            "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+            "所有差异保留来源标识"
+          ],
+          "given": true
+        },
+        "to": "I"
+      },
+      {
+        "from": "I",
+        "target_part": {
+          "complete_semantics": [
+            "输运只重排同源差异，黏性内生消解差异，压力只闭合不可压缩约束",
+            "三种角色覆盖全部已登记差异且不生成隐藏第四通道"
+          ],
+          "given": true
+        },
+        "to": "K"
+      },
+      {
+        "from": "K",
+        "target_part": {
+          "given": true,
+          "value_information": [
+            "完整语义禁止第三来源、来源抹除与完成无穷",
+            "消解后的同一来源义务不得作为同级未决差异返回"
+          ]
+        },
+        "to": "W"
+      },
+      {
+        "from": "W",
+        "target_part": {
+          "given": true,
+          "input": "任意有限时刻的完整光滑流状态包",
+          "output": "可继续到下一有限时刻的完整光滑流状态包"
+        },
+        "to": "P"
+      },
+      {
+        "from": "P",
+        "target_part": {
+          "complete_semantics": [
+            "对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形",
+            "任意有限时刻均无未登记的奇性来源义务"
+          ],
+          "given": true
+        },
+        "to": "K"
+      }
+    ]
+  },
+  "system": "DIKWP-MESH 8.0 Core Bidirectional Semantic Generation",
+  "transformation_trace": [
+    {
+      "applied": true,
+      "from": "P",
+      "index": 0,
+      "packet_after": "6f98d86d292671cfcccdafa17f061cf65f3b6f34d948f3f20e4c3616da21d804",
+      "packet_before": "0fea070d084575afac2a79cf3f74576624f7ea35556d57c4e6c3b86c6f81f57c",
+      "route": "P2D",
+      "source_part": {
+        "given": true,
+        "input": "给定光滑、无散度初始速度语义包 u0，黏性系数 nu>0，外力 f=0",
+        "output": "任意有限时刻 T 的光滑、无散度、来源可回放流状态语义包 u(T)"
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "same_semantics": [
+          "有限时刻输出继续登记为同一初始流体来源身份",
+          "输入与输出通过同一来源摘要双向关联"
+        ]
+      },
+      "target_before": {
+        "given": true,
+        "same_semantics": [
+          "同一不可压缩流体身份在任意有限时刻保持",
+          "无外力条件下全部动量来源来自已给定初始语义包",
+          "坐标位置与呈现尺度变化不改变来源身份"
+        ]
+      },
+      "to": "D"
+    },
+    {
+      "applied": true,
+      "from": "D",
+      "index": 1,
+      "packet_after": "d2c2fdae2eea7b634f0d91ef9e6917bae8eac35f7db13f4369ec214b7ca7be72",
+      "packet_before": "6f98d86d292671cfcccdafa17f061cf65f3b6f34d948f3f20e4c3616da21d804",
+      "route": "D2I",
+      "source_part": {
+        "given": true,
+        "same_semantics": [
+          "有限时刻输出继续登记为同一初始流体来源身份",
+          "输入与输出通过同一来源摘要双向关联"
+        ]
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "different_semantics": [
+          "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+          "所有差异保留来源标识"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "different_semantics": [
+          "空间位置、方向与尺度上的速度差异",
+          "输运重排、黏性消解与压力约束闭合三种不同角色",
+          "任意新差异必须显式登记，不得静默存在"
+        ],
+        "given": true
+      },
+      "to": "I"
+    },
+    {
+      "applied": true,
+      "from": "I",
+      "index": 2,
+      "packet_after": "3ebaa7f2bca969a1d0b9d4d3415260bf7b5e5635011867d4aaf46214e2e7adda",
+      "packet_before": "d2c2fdae2eea7b634f0d91ef9e6917bae8eac35f7db13f4369ec214b7ca7be72",
+      "route": "I2K",
+      "source_part": {
+        "different_semantics": [
+          "同一来源内部显式分化为位置重排差异、速度差异与约束差异",
+          "所有差异保留来源标识"
+        ],
+        "given": true
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "complete_semantics": [
+          "输运只重排同源差异，黏性内生消解差异，压力只闭合不可压缩约束",
+          "三种角色覆盖全部已登记差异且不生成隐藏第四通道"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "complete_semantics": [
+          "完整流状态由初始来源、同源输运、黏性差异消解与不可压缩压力闭合共同构成",
+          "压力不具有独立来源身份，不构成第三来源",
+          "未来差异只能由已登记来源关系通过显式核心路径派生"
+        ],
+        "given": true
+      },
+      "to": "K"
+    },
+    {
+      "applied": true,
+      "from": "K",
+      "index": 3,
+      "packet_after": "bb4823d62155c6fd07f60329ba114ad10030f5ab83216c8cc843a477ddd0d644",
+      "packet_before": "3ebaa7f2bca969a1d0b9d4d3415260bf7b5e5635011867d4aaf46214e2e7adda",
+      "route": "K2W",
+      "source_part": {
+        "complete_semantics": [
+          "输运只重排同源差异，黏性内生消解差异，压力只闭合不可压缩约束",
+          "三种角色覆盖全部已登记差异且不生成隐藏第四通道"
+        ],
+        "given": true
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "value_information": [
+          "完整语义禁止第三来源、来源抹除与完成无穷",
+          "消解后的同一来源义务不得作为同级未决差异返回"
+        ]
+      },
+      "target_before": {
+        "given": true,
+        "value_information": [
+          "禁止静默生成第三来源",
+          "禁止抹去已经登记的来源差异",
+          "禁止把潜在无界实例补写为单一对象内部已经完成的无穷",
+          "保持不可压缩身份与双向回放"
+        ]
+      },
+      "to": "W"
+    },
+    {
+      "applied": true,
+      "from": "W",
+      "index": 4,
+      "packet_after": "55076804f29a683a6f347f670fff08dc4d8346a3b6c0fa23cbc51f0a6f9ba1c7",
+      "packet_before": "bb4823d62155c6fd07f60329ba114ad10030f5ab83216c8cc843a477ddd0d644",
+      "route": "W2P",
+      "source_part": {
+        "given": true,
+        "value_information": [
+          "完整语义禁止第三来源、来源抹除与完成无穷",
+          "消解后的同一来源义务不得作为同级未决差异返回"
+        ]
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "given": true,
+        "input": "任意有限时刻的完整光滑流状态包",
+        "output": "可继续到下一有限时刻的完整光滑流状态包"
+      },
+      "target_before": {
+        "given": true,
+        "input": "给定光滑、无散度初始速度语义包 u0，黏性系数 nu>0，外力 f=0",
+        "output": "任意有限时刻 T 的光滑、无散度、来源可回放流状态语义包 u(T)"
+      },
+      "to": "P"
+    },
+    {
+      "applied": true,
+      "from": "P",
+      "index": 5,
+      "packet_after": "e700cb171e5e337600ebb137d5b1b6542e1ec58987f29b6036e2290013fe182c",
+      "packet_before": "55076804f29a683a6f347f670fff08dc4d8346a3b6c0fa23cbc51f0a6f9ba1c7",
+      "route": "P2K",
+      "source_part": {
+        "given": true,
+        "input": "任意有限时刻的完整光滑流状态包",
+        "output": "可继续到下一有限时刻的完整光滑流状态包"
+      },
+      "state": "EXPLICIT_CORE_TO_CORE_GENERATION",
+      "target_after": {
+        "complete_semantics": [
+          "对每个有限 T，有限次显式核心路径共同形成可回放的流状态正常形",
+          "任意有限时刻均无未登记的奇性来源义务"
+        ],
+        "given": true
+      },
+      "target_before": {
+        "complete_semantics": [
+          "输运只重排同源差异，黏性内生消解差异，压力只闭合不可压缩约束",
+          "三种角色覆盖全部已登记差异且不生成隐藏第四通道"
+        ],
+        "given": true
+      },
+      "to": "K"
+    }
+  ],
+  "unregistered_aliases": [],
+  "version": "8.0.0"
+}

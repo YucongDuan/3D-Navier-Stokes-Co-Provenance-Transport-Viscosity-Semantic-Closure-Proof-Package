@@ -1,0 +1,397 @@
+{
+  "schema": "safe-source-preparation/v1",
+  "status": "STRUCTURALLY_PREPARED_UNTESTED",
+  "prepared_at_utc": "2026-09-07T05:12:46.619308+00:00",
+  "source": {
+    "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package.zip#normalized-source-view",
+    "archive_bytes": 4692503,
+    "sha256": "12286d92eb5c18e2505b147764f4dcaf995975f26f4e16cc274b2f039066109b",
+    "source_url": "https://raw.githubusercontent.com/YucongDuan/3D-Navier-Stokes-Co-Provenance-Transport-Viscosity-Semantic-Closure-Proof-Package/fcadd886dd917c147025acd168f47f34f06109ee/Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package.zip",
+    "original_unchanged": true,
+    "original_public_archive_sha256": "67ec29dd3be456121a415129b041d20b52010d2b6fd10658655b24019b5a31d1"
+  },
+  "destination": "source-distribution/Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package-4b3b3eab11",
+  "unwrapped_directory": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package",
+  "project_marker_directories": [],
+  "limits": {
+    "max_entries": 20000,
+    "max_file_bytes": 103809024,
+    "max_total_bytes": 536870912,
+    "max_archive_bytes": 104857600,
+    "max_ratio": 200.0,
+    "max_path_depth": 64,
+    "max_path_bytes": 1024
+  },
+  "workflows": {
+    "included_in_source": false,
+    "authority": "",
+    "executed": false,
+    "default": "quarantine"
+  },
+  "warnings": [],
+  "files": [
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/",
+      "output_path": "source",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/verification/",
+      "output_path": "source/verification",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/verification/PROOF_CLAIMS.json",
+      "output_path": "source/verification/PROOF_CLAIMS.json",
+      "kind": "file",
+      "bytes": 1817,
+      "sha256": "c9969586c47aa60460493bfc758535d6962d7d2c833a6d7d233eb28678ba5f5c",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/verification/SHA256SUMS.txt",
+      "output_path": "source/verification/SHA256SUMS.txt",
+      "kind": "file",
+      "bytes": 3241,
+      "sha256": "8414a0d55e8fce75adc7aedb5c891ec356f51a58df19514430348732b4fb56cb",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/verification/RELEASE.json",
+      "output_path": "source/verification/RELEASE.json",
+      "kind": "file",
+      "bytes": 617,
+      "sha256": "c80c8638a13a9a671df27637a9b47eefb6c8d613a7cce6e30a87a5def5114514",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/verification/verify_package.py",
+      "output_path": "source/verification/verify_package.py",
+      "kind": "file",
+      "bytes": 1713,
+      "sha256": "bc5961463ae3b377de6df9bb701e121be9c72e192e0acdb5b1ebe8733ebcdb80",
+      "original_mode": "0o100755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/",
+      "output_path": "source/certificates",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_run_output_en.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_run_output_en.json",
+      "kind": "file",
+      "bytes": 26199,
+      "sha256": "f40b775421923fbd3f2d9e25e557ee96f5842956d271362efade2a3c6cf27d35",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_run_spec_cn.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_run_spec_cn.json",
+      "kind": "file",
+      "bytes": 3490,
+      "sha256": "20ef1db10e70d722719f9e61e5c62da2c0287b8be945f024cf720839285f6a16",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_replay_en.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_replay_en.json",
+      "kind": "file",
+      "bytes": 382,
+      "sha256": "ec8a7ea0047ed2d91c7f8bb24cf49e4fd430782077a5e5e9571531cda67bd184",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_replay_cn.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_replay_cn.json",
+      "kind": "file",
+      "bytes": 382,
+      "sha256": "dacc8fde885716fa8434d05fc8f604ac9039d3125fc4ab28dc7b38938ff671a4",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_run_output_cn.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_run_output_cn.json",
+      "kind": "file",
+      "bytes": 23806,
+      "sha256": "10804f7809fb757a992789bc8ef6c51ff6b0e2d2b3b0dde6f76625447c0712a5",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/certificates/navier_stokes_mesh80_run_spec_en.json",
+      "output_path": "source/certificates/navier_stokes_mesh80_run_spec_en.json",
+      "kind": "file",
+      "bytes": 4032,
+      "sha256": "c88ce6f2b572283f817b3a431d6b7c461fbc2eacc97992c66ccf247a0fa8e096",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/source/",
+      "output_path": "source/source",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/source/fix_en_figures.py",
+      "output_path": "source/source/fix_en_figures.py",
+      "kind": "file",
+      "bytes": 4743,
+      "sha256": "b8351afb9cacb631b14e322b3ea707b21d9c670c1606ac66c6c3ee4b67c7cea8",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/source/create_assets.py",
+      "output_path": "source/source/create_assets.py",
+      "kind": "file",
+      "bytes": 11264,
+      "sha256": "0d2dbfcbaa7ecf3b60f1f840fcd6b254bef5cb4d77912ed6bf5839eed15c5656",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/source/create_reports.py",
+      "output_path": "source/source/create_reports.py",
+      "kind": "file",
+      "bytes": 84098,
+      "sha256": "a33e8e652f94fa0dccb717663d6a9f74125d71a53378fa212ed78a96a826daba",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/dashboards/",
+      "output_path": "source/dashboards",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/dashboards/navier_stokes_mesh80_dashboard_en.html",
+      "output_path": "source/dashboards/navier_stokes_mesh80_dashboard_en.html",
+      "kind": "file",
+      "bytes": 5489,
+      "sha256": "6848ec5c61c1bf176db3c61f26939133f72e5957395ac614b35a3824572c7a0a",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/dashboards/navier_stokes_mesh80_dashboard_cn.html",
+      "output_path": "source/dashboards/navier_stokes_mesh80_dashboard_cn.html",
+      "kind": "file",
+      "bytes": 5166,
+      "sha256": "3e882398f571f1e0f12c53034f0c548798f5082d15849decb128e888fb1ed25f",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/README_CN.md",
+      "output_path": "source/README_CN.md",
+      "kind": "file",
+      "bytes": 1507,
+      "sha256": "f803a5182c8ce16892aa7d46a908694d8652a62f48f300c464bb4ad3e609f460",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/",
+      "output_path": "source/figures",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig5_status_cn.png",
+      "output_path": "source/figures/fig5_status_cn.png",
+      "kind": "file",
+      "bytes": 120610,
+      "sha256": "e0d7f78d03c5e0c480f5121f5860086bd3b094a65bb8ce7b84bf3dac85b35063",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig4_chain_en.png",
+      "output_path": "source/figures/fig4_chain_en.png",
+      "kind": "file",
+      "bytes": 138207,
+      "sha256": "df86c69b543cbc9ba387a8f5711cb25762698165669bae4a2fc8b542b95e0564",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig5_status_en.png",
+      "output_path": "source/figures/fig5_status_en.png",
+      "kind": "file",
+      "bytes": 188321,
+      "sha256": "7b20c27a9325fffd246f9a02c532bc46a690e9c1750f2a493df820b815720758",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig1_mesh80_network_en.png",
+      "output_path": "source/figures/fig1_mesh80_network_en.png",
+      "kind": "file",
+      "bytes": 242419,
+      "sha256": "8847d7b062a4e7dd65ce5aa9164836f556fbef3ac9ecc72cd1dfa22773d2526c",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig2_roles_cn.png",
+      "output_path": "source/figures/fig2_roles_cn.png",
+      "kind": "file",
+      "bytes": 175421,
+      "sha256": "38cd36e7238f3324e97aef7e964deef1bc20523a55a8fe560a06905ae9cd02f2",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig1_mesh80_network_cn.png",
+      "output_path": "source/figures/fig1_mesh80_network_cn.png",
+      "kind": "file",
+      "bytes": 218478,
+      "sha256": "3a4a12953870ff5f16bfb13c3c8a619eeb1420f06a4f500374e38f04f93962bf",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig3_singularity_en.png",
+      "output_path": "source/figures/fig3_singularity_en.png",
+      "kind": "file",
+      "bytes": 207398,
+      "sha256": "3e5306071010590dc0d6e1578d583ef85a39ad74117852fcf9c1772af43907c0",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig3_singularity_cn.png",
+      "output_path": "source/figures/fig3_singularity_cn.png",
+      "kind": "file",
+      "bytes": 173079,
+      "sha256": "b82fc593cb7befee97e3bc7411b82b75187060d981ac1b1fb0461f2c166dd2cb",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig4_chain_cn.png",
+      "output_path": "source/figures/fig4_chain_cn.png",
+      "kind": "file",
+      "bytes": 114368,
+      "sha256": "53d626a7d8c7b3d6c47b47f5c10fd0909c481765bd57598933ee2630a447a713",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/figures/fig2_roles_en.png",
+      "output_path": "source/figures/fig2_roles_en.png",
+      "kind": "file",
+      "bytes": 217106,
+      "sha256": "1a4883e5e276664193addf2b28c3818f45bc9f80248d6e07aa7745d48a55611c",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/reports/",
+      "output_path": "source/reports",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/reports/document-a958b6ccf61e443437e4deb1.docx",
+      "output_path": "source/reports/document-a958b6ccf61e443437e4deb1.docx",
+      "kind": "file",
+      "bytes": 1355687,
+      "sha256": "3356a7abece51042b31225d100f390ca3a5b03cf9aa28e716e28351c3dd5cede",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/reports/Yucong_Duan_3D_Navier_Stokes_CoProvenance_Transport_Viscosity_Semantic_Closure_Proof_MESH80_Full_Report_EN.docx",
+      "output_path": "source/reports/Yucong_Duan_3D_Navier_Stokes_CoProvenance_Transport_Viscosity_Semantic_Closure_Proof_MESH80_Full_Report_EN.docx",
+      "kind": "file",
+      "bytes": 1609977,
+      "sha256": "52fde7aad64df4da8dc5f9ce0ce839f4b86d82176d7b2b4dd94060a540674cf8",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/README_EN.md",
+      "output_path": "source/README_EN.md",
+      "kind": "file",
+      "bytes": 1736,
+      "sha256": "126f6e24bae7a8a27901e4d0f2852a53e1d3f00b9fa8bea61665c25bc72483af",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/NOTICE",
+      "output_path": "source/NOTICE",
+      "kind": "file",
+      "bytes": 378,
+      "sha256": "68425f7010acb1b0ec127e4feb5bfe4e211762feecb936e71e9471750a9c965b",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/LICENSE",
+      "output_path": "source/LICENSE",
+      "kind": "file",
+      "bytes": 1086,
+      "sha256": "debbca697edbe39edf08a582b005cd34992a84be4269686efc22aef1b6247920",
+      "original_mode": "0o100644",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/runtime/",
+      "output_path": "source/runtime",
+      "kind": "directory",
+      "bytes": 0,
+      "sha256": null,
+      "original_mode": "0o42755",
+      "quarantined": false
+    },
+    {
+      "archive_path": "Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package/runtime/DIKWP_MESH80_CORE.pyz",
+      "output_path": "source/runtime/DIKWP_MESH80_CORE.pyz",
+      "kind": "file",
+      "bytes": 15328,
+      "sha256": "f27355609106b1d98a2d3a8c1a1fb3a2b02523598a383a78db58b5ea62024959",
+      "original_mode": "0o100755",
+      "quarantined": false
+    }
+  ],
+  "evidence_boundary": "Safety of ZIP paths/budgets only. No code, install, build, tests, network, git operation, license reassignment, or certification was performed.",
+  "normalization_report": "normalization.json",
+  "nested_archive_policy": "Each ZIP recursively inspected to bounded depth; all versions preserved; see root SOURCE_PROVENANCE.json."
+}

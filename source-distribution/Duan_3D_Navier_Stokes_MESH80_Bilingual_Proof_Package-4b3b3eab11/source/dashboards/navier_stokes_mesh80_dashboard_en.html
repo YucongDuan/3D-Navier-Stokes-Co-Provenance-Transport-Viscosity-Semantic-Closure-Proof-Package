@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIKWP-MESH 8.0</title>
+<style>
+body{font-family:Arial,'Microsoft YaHei',sans-serif;margin:0;background:#f5f7fb;color:#172033}
+main{max-width:1180px;margin:0 auto;padding:28px}
+header{background:#13233f;color:white;padding:28px;border-radius:16px}
+.card{background:white;margin-top:18px;padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(22,32,51,.08)}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8dfeb;padding:10px;vertical-align:top;text-align:left}th{background:#edf2f9}
+pre{white-space:pre-wrap;word-break:break-word;margin:0}code{word-break:break-all}
+.badge{display:inline-block;background:#e8eef8;padding:5px 9px;border-radius:999px;margin-right:6px;color:#13233f}
+</style>
+</head>
+<body><main>
+<header>
+<h1>DIKWP-MESH 8.0</h1>
+<p>Core Bidirectional Semantic Generation / 核心语义双向生成</p>
+<span class="badge">COMPLETED_CORE_ONLY</span>
+<span class="badge">non-core semantic authority: 0</span>
+</header>
+<section class="card"><h2>Final DIKWP packet / 最终 DIKWP 语义包</h2>
+<table><tr><th>Kind</th><th>State</th><th>Content</th></tr><tr><td><strong>D</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;same_semantics&quot;: [
+    &quot;Every finite-time output remains registered to the same initial fluid provenance&quot;,
+    &quot;Input and output round-trip through one provenance digest&quot;
+  ]
+}</pre></td></tr><tr><td><strong>I</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;different_semantics&quot;: [
+    &quot;The same provenance is explicitly differentiated into relocation, velocity, and constraint differences&quot;,
+    &quot;Every difference retains its provenance identifier&quot;
+  ]
+}</pre></td></tr><tr><td><strong>K</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;complete_semantics&quot;: [
+    &quot;For every finite T, finitely instantiated explicit core routes form a replayable flow normal form&quot;,
+    &quot;No finite time contains an unregistered singular provenance obligation&quot;
+  ]
+}</pre></td></tr><tr><td><strong>W</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;value_information&quot;: [
+    &quot;Complete semantics forbids a third source, provenance erasure, and completed infinity&quot;,
+    &quot;An eliminated provenance obligation may not return as a same-level unresolved difference&quot;
+  ]
+}</pre></td></tr><tr><td><strong>P</strong></td><td>given</td><td><pre>{
+  &quot;given&quot;: true,
+  &quot;input&quot;: &quot;A complete smooth flow packet at an arbitrary finite time&quot;,
+  &quot;output&quot;: &quot;A complete smooth flow packet continuable to the next finite time&quot;
+}</pre></td></tr></table></section>
+<section class="card"><h2>Core-to-core routes / 核心到核心路径</h2>
+<table><tr><th>#</th><th>Route</th><th>State</th><th>Applied</th></tr><tr><td>0</td><td>P2D</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>1</td><td>D2I</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>2</td><td>I2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>3</td><td>K2W</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>4</td><td>W2P</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>5</td><td>P2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr></table></section>
+<section class="card"><h2>Concept aliases born from semantics / 由语义后生的概念别名</h2>
+<table><tr><th>Alias</th><th>Revision</th><th>Packet digest</th><th>Not given</th></tr><tr><td>Initial semantic packet of a three-dimensional incompressible flow</td><td>1</td><td><code>93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59</code></td><td>none</td></tr><tr><td>Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form</td><td>1</td><td><code>ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e</code></td><td>none</td></tr></table></section>
+<section class="card"><h2>Bidirectional association / 双向关联</h2>
+<pre>[
+  {
+    &quot;alias&quot;: &quot;Initial semantic packet of a three-dimensional incompressible flow&quot;,
+    &quot;packet_digest&quot;: &quot;93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59&quot;,
+    &quot;alias_recovered&quot;: true,
+    &quot;all_aliases_for_packet&quot;: [
+      &quot;Initial semantic packet of a three-dimensional incompressible flow&quot;
+    ],
+    &quot;valid&quot;: true
+  },
+  {
+    &quot;alias&quot;: &quot;Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form&quot;,
+    &quot;packet_digest&quot;: &quot;ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e&quot;,
+    &quot;alias_recovered&quot;: true,
+    &quot;all_aliases_for_packet&quot;: [
+      &quot;Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form&quot;
+    ],
+    &quot;valid&quot;: true
+  }
+]</pre></section>
+<section class="card"><h2>Transport integrity / 传输完整性</h2>
+<p>Run hash: <code>880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40</code></p>
+<p>Ledger head: <code>96e211236748f76e74083210179439b3d777321b16e2cc347d2b014bccc99ff6</code></p>
+<p>These handles compare bytes only and do not generate semantics.</p></section>
+</main></body></html>
