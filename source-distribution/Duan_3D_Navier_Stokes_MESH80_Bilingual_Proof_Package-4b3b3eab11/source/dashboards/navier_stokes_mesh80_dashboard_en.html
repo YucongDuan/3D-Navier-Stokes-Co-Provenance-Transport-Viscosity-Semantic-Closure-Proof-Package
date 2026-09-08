@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,17 @@ table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8dfeb;padding
 pre{white-space:pre-wrap;word-break:break-word;margin:0}code{word-break:break-all}
 .badge{display:inline-block;background:#e8eef8;padding:5px 9px;border-radius:999px;margin-right:6px;color:#13233f}
 </style>
+<meta name="author" content="Yucong Duan (段玉聪)">
 </head>
 <body><main>
 <header>
 <h1>DIKWP-MESH 8.0</h1>
-<p>Core Bidirectional Semantic Generation / 核心语义双向生成</p>
+<p data-project-creator="true" style="font-size:.9rem;line-height:1.5;opacity:.85;margin:.5rem 0 1rem">Created by Yucong Duan (段玉聪).</p>
+<p>Core bidirectional semantic generation</p>
 <span class="badge">COMPLETED_CORE_ONLY</span>
 <span class="badge">non-core semantic authority: 0</span>
 </header>
-<section class="card"><h2>Final DIKWP packet / 最终 DIKWP 语义包</h2>
+<section class="card"><h2>Final DIKWP semantic packet</h2>
 <table><tr><th>Kind</th><th>State</th><th>Content</th></tr><tr><td><strong>D</strong></td><td>given</td><td><pre>{
   &quot;given&quot;: true,
   &quot;same_semantics&quot;: [
@@ -51,11 +53,11 @@ pre{white-space:pre-wrap;word-break:break-word;margin:0}code{word-break:break-al
   &quot;input&quot;: &quot;A complete smooth flow packet at an arbitrary finite time&quot;,
   &quot;output&quot;: &quot;A complete smooth flow packet continuable to the next finite time&quot;
 }</pre></td></tr></table></section>
-<section class="card"><h2>Core-to-core routes / 核心到核心路径</h2>
+<section class="card"><h2>Core-to-core routes</h2>
 <table><tr><th>#</th><th>Route</th><th>State</th><th>Applied</th></tr><tr><td>0</td><td>P2D</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>1</td><td>D2I</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>2</td><td>I2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>3</td><td>K2W</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>4</td><td>W2P</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr><tr><td>5</td><td>P2K</td><td>EXPLICIT_CORE_TO_CORE_GENERATION</td><td>True</td></tr></table></section>
-<section class="card"><h2>Concept aliases born from semantics / 由语义后生的概念别名</h2>
+<section class="card"><h2>Concept aliases derived from semantics</h2>
 <table><tr><th>Alias</th><th>Revision</th><th>Packet digest</th><th>Not given</th></tr><tr><td>Initial semantic packet of a three-dimensional incompressible flow</td><td>1</td><td><code>93ef829a1e99829b75fd12feab8a77ee58934f2ab9c6851cb2347c346f036a59</code></td><td>none</td></tr><tr><td>Three-dimensional Navier-Stokes co-provenance transport-viscosity smooth normal form</td><td>1</td><td><code>ac38f3f13321b3ff8aa2fa8cf538f61acb63c37f46001e0e6cf8880841d9356e</code></td><td>none</td></tr></table></section>
-<section class="card"><h2>Bidirectional association / 双向关联</h2>
+<section class="card"><h2>Bidirectional association</h2>
 <pre>[
   {
     &quot;alias&quot;: &quot;Initial semantic packet of a three-dimensional incompressible flow&quot;,
@@ -76,8 +78,125 @@ pre{white-space:pre-wrap;word-break:break-word;margin:0}code{word-break:break-al
     &quot;valid&quot;: true
   }
 ]</pre></section>
-<section class="card"><h2>Transport integrity / 传输完整性</h2>
+<section class="card"><h2>Transport integrity</h2>
 <p>Run hash: <code>880719b3f027d54365d854aab0dbb6e105c055421409a093b9e9601977a03c40</code></p>
 <p>Ledger head: <code>96e211236748f76e74083210179439b3d777321b16e2cc347d2b014bccc99ff6</code></p>
 <p>These handles compare bytes only and do not generate semantics.</p></section>
-</main></body></html>
+</main>
+<script id="yd-interface-config" type="application/json">{"messages":{"天":"days","概念":"Concept","修订":"Revision","证书":"Certificate","中文":"中文","说明":"Notes","义务":"Obligation","名称":"Name","类型":"Type","数量":"Quantity","数据":"Data","允许":"Allowed","生成":"Generate","当前":"Current","目标":"Target","关键区分":"Key distinction","审计":"Audit","决定":"Decision","独立核验":"Independently verified","对象":"Object","通道":"Channel","编号":"Identifier","解释":"Interpretation","状态":"Status","公开":"Public","传统":"Tradition","页面":"Pages","来源位置":"Source position","模式":"Mode","假设":"Hypothesis","周期":"Period","Core Bidirectional Semantic Generation / 核心语义双向生成":"Core bidirectional semantic generation","Final DIKWP packet / 最终 DIKWP 语义包":"Final DIKWP semantic packet","Core-to-core routes / 核心到核心路径":"Core-to-core routes","Concept aliases born from semantics / 由语义后生的概念别名":"Concept aliases derived from semantics","Bidirectional association / 双向关联":"Bidirectional association","Transport integrity / 传输完整性":"Transport integrity","闭环":"Closure","共同体":"Community","下降":"Decreasing","依赖":"Dependence","概念别名":"Concept aliases","系统":"System","结构":"Structure","内容":"Content","一般":"General","关系":"Relationships","维度":"Dimension","输入摘要":"Input summary","来源":"Source","问题":"Question","边界":"Scope","事件":"Event"}}</script>
+<script>
+/* Interface localization. Creator: Yucong Duan (段玉聪). */
+(() => {
+  'use strict';
+  const configuration = document.getElementById('yd-interface-config');
+  if (!configuration) return;
+  const config = JSON.parse(configuration.textContent);
+  const dictionary = new Map(Object.entries(config.messages || {}).map(([a, b]) => [a.trim().replace(/\s+/g, ' '), b]));
+  const numeric = /\d[\d,]*(?:\.\d+)?/g;
+  const templates = [];
+  const escapePattern = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  for (const [source, target] of dictionary) {
+    const a = source.match(numeric) || [], b = target.match(numeric) || [];
+    if (!a.length || a.length > 12 || a.length !== b.length || !a.every((v, i) => v.replace(/,/g, '') === b[i].replace(/,/g, ''))) continue;
+    const parts = source.split(numeric);
+    templates.push({pattern: new RegExp('^' + parts.map(escapePattern).join('(\\d[\\d,]*(?:\\.\\d+)?)') + '$'), parts: target.split(numeric)});
+  }
+  const textState = new WeakMap();
+  const attributeState = new WeakMap();
+  const attributes = ['title', 'placeholder', 'aria-label', 'alt', 'label'];
+  const excluded = 'script,style,pre,code,textarea,[contenteditable],[data-source-language],[data-project-creator]';
+  let language = 'en';
+  const originalTitle = document.title;
+
+  function translate(value) {
+    const key = value.trim().replace(/\s+/g, ' ');
+    let translated = dictionary.get(key);
+    if (translated === undefined && /[\u3400-\u9fff]/.test(key)) {
+      for (const template of templates) {
+        const match = key.match(template.pattern);
+        if (!match) continue;
+        translated = template.parts.map((part, i) => part + (match[i + 1] || '')).join('');
+        break;
+      }
+    }
+    if (translated === undefined) return value;
+    const leading = value.match(/^\s*/)[0];
+    const trailing = value.match(/\s*$/)[0];
+    return leading + translated + trailing;
+  }
+
+  function updateText(node) {
+    const parent = node.parentElement;
+    if (!parent || parent.closest(excluded)) return;
+    let saved = textState.get(node);
+    const current = node.nodeValue;
+    if (!saved || current !== saved.rendered) saved = { original: current, rendered: current };
+    const next = language === 'en' ? translate(saved.original) : saved.original;
+    if (next !== current) {
+      // Translating an option label must not change the value used by the application.
+      if (parent.tagName === 'OPTION' && !parent.hasAttribute('value')) parent.setAttribute('value', parent.textContent);
+      node.nodeValue = next;
+    }
+    saved.rendered = next;
+    textState.set(node, saved);
+  }
+
+  function updateAttributes(element) {
+    if (!element || element.closest(excluded)) return;
+    let saved = attributeState.get(element);
+    if (!saved) { saved = new Map(); attributeState.set(element, saved); }
+    for (const name of attributes) {
+      if (!element.hasAttribute(name)) continue;
+      // The label attribute is an interface label on these elements only.
+      if (name === 'label' && !['OPTION', 'OPTGROUP', 'TRACK'].includes(element.tagName)) continue;
+      const current = element.getAttribute(name);
+      let prior = saved.get(name);
+      if (!prior || current !== prior.rendered) prior = { original: current, rendered: current };
+      const next = language === 'en' ? translate(prior.original) : prior.original;
+      if (next !== current) element.setAttribute(name, next);
+      prior.rendered = next; saved.set(name, prior);
+    }
+  }
+
+  function visit(root) {
+    if (root.nodeType === Node.TEXT_NODE) { updateText(root); return; }
+    if (root.nodeType !== Node.ELEMENT_NODE || root.closest(excluded)) return;
+    updateAttributes(root);
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) updateText(walker.currentNode);
+    for (const element of root.querySelectorAll('[title],[placeholder],[aria-label],[alt],[label]')) updateAttributes(element);
+  }
+
+  function setLanguage(next) {
+    language = next === 'zh' ? 'zh' : 'en';
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    document.title = language === 'en' ? translate(originalTitle) : originalTitle;
+    visit(document.body);
+  }
+
+  function start() {
+    const select = config.nativeSelect ? document.querySelector(config.nativeSelect) : null;
+    const button = config.nativeButton ? document.querySelector(config.nativeButton) : null;
+    if (select) language = select.value === 'zh' ? 'zh' : 'en';
+    else if (config.storageKey) {
+      try { language = localStorage.getItem(config.storageKey) === 'zh' ? 'zh' : 'en'; } catch (_) { language = 'en'; }
+    }
+    setLanguage(language);
+    if (select) select.addEventListener('change', () => setLanguage(select.value));
+    if (button) button.addEventListener('click', () => setLanguage(language === 'en' ? 'zh' : 'en'));
+    const observer = new MutationObserver(records => {
+      for (const record of records) {
+        if (record.type === 'characterData') updateText(record.target);
+        else if (record.type === 'attributes') updateAttributes(record.target);
+        else for (const node of record.addedNodes) visit(node);
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: attributes });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();
+
+</script>
+</body></html>

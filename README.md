@@ -1,5 +1,7 @@
 # Yucong Duan: 3D Navier–Stokes Co-Provenance Transport–Viscosity Semantic Closure Proof Package
 
+Created by Yucong Duan (段玉聪).
+
 Version: MESH8.0 / `MESH80_DIKWP_CORE_ONLY`
 
 ## Contents
@@ -37,7 +39,7 @@ python runtime/DIKWP_MESH80_CORE.pyz replay certificates/navier_stokes_mesh80_ru
 <!-- DIKWP-SOURCE-VISIBILITY-START -->
 ## Browse source / 浏览源码
 
-[Source index / 源码入口](SOURCE_INDEX.md) expands the retained archive distribution into browsable files, with archive hashes and per-project provenance. Runtime tests: **NOT_RUN**.
+[Source index / 源码入口](SOURCE_INDEX.md) expands the retained archive distribution into browsable files, with archive hashes and per-project provenance. Runtime tests: NOT_RUN.
 
 原始压缩包 保留；新增可浏览源码、哈希与来源记录。运行与测试尚未执行，详情见源码入口。
 <!-- DIKWP-SOURCE-VISIBILITY-END -->
@@ -52,3 +54,7 @@ Research navigation, not verified software dependencies. / 研究导航，不代
 - [Schanuel-s-Conjecture-Mesh8.0-Semantic-Closure-Package](https://github.com/YucongDuan/Schanuel-s-Conjecture-Mesh8.0-Semantic-Closure-Package)
 - [Twin-Prime-Semantic-Closure-Package](https://github.com/YucongDuan/Twin-Prime-Semantic-Closure-Package)
 - [DIKWP-COVARIA-OS](https://github.com/YucongDuan/DIKWP-COVARIA-OS)
+
+## Current interface presentation
+
+[Open the interface source](source-distribution/Duan_3D_Navier_Stokes_MESH80_Bilingual_Proof_Package-4b3b3eab11/source/dashboards/navier_stokes_mesh80_dashboard_en.html) from the current repository download. See [interface and authorship notes](INTERFACE_NOTES.md) for English coverage, report generation and validation scope.
